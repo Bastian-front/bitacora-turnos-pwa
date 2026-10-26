@@ -1,8 +1,8 @@
 {
   "name": "Monitoreo de Rutas",
   "short_name": "Monitoreo Rutas",
-  "start_url": "REEMPLAZA_CON_TU_URL_DE_EXEC",
-  "scope": "REEMPLAZA_CON_TU_URL_DE_EXEC",
+  "start_url": "https://bastian-front.github.io/monitoreo-rutas-pwa/",
+  "scope": "https://bastian-front.github.io/monitoreo-rutas-pwa/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#0a2540",
