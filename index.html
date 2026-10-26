@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Monitoreo de Rutas</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <meta name="theme-color" content="#0a2540">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Monitoreo de Rutas">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background: #0a2540;
+    }
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Reemplaza REEMPLAZA_CON_TU_URL_DE_EXEC por la URL /exec real de tu
+       deploy de Apps Script. "allow=geolocation" es OBLIGATORIO: sin esto
+       el navegador bloquea el GPS dentro del iframe y el geofencing no
+       funcionaría. -->
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbylMZzbrOI0aeyV6jggVwb2FO3n1_ah6nFhtEZP1cDHm7SZ04J9COvUQJPblhUUZwLw/exec"
+    allow="geolocation"
+    title="Monitoreo de Rutas"></iframe>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(function(err) {
+        console.error('No se pudo registrar el service worker:', err);
+      });
+    }
+  </script>
+</body>
+</html>
