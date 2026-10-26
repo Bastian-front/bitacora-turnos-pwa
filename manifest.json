@@ -1,0 +1,24 @@
+{
+  "name": "Monitoreo de Rutas",
+  "short_name": "Monitoreo Rutas",
+  "start_url": "REEMPLAZA_CON_TU_URL_DE_EXEC",
+  "scope": "REEMPLAZA_CON_TU_URL_DE_EXEC",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a2540",
+  "theme_color": "#0a2540",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
