@@ -1,6 +1,6 @@
 {
-  "name": "Monitoreo de Rutas",
-  "short_name": "Monitoreo Rutas",
+  "name": "Control de Rutas",
+  "short_name": "Control Rutas",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
