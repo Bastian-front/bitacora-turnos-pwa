@@ -1,6 +1,6 @@
 {
-  "name": "Control de Rutas",
-  "short_name": "Control Rutas",
+  "name": "Bitácora de Turnos",
+  "short_name": "Bitácora Turnos",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
